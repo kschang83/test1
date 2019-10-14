@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ColorBox from './components/ColorBox';
 import { ColorProvider } from './contexts/color';
 import SelectColors from './components/SelectColors';
