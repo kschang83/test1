@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 
 const ColorContext = createContext({
-    state: { color: 'gray', subcolor: 'blue' },
+    state: { color: 'green', subcolor: 'aqua' },
     actions: {
         setColor: () => { },
         setSubcolor: () => { }
@@ -9,8 +9,8 @@ const ColorContext = createContext({
 });
 
 const ColorProvider = ({ children }) => {
-    const [color, setColor] = useState('gray');
-    const [subcolor, setSubcolor] = useState('blue');
+    const [color, setColor] = useState('green');
+    const [subcolor, setSubcolor] = useState('aqua');
 
     const value = {
         state: { color, subcolor },
