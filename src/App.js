@@ -1,5 +1,5 @@
-import React from 'react';
-import ColorBox from './components/ColorBox';
+import React, {useState, useEffect, useCallback} from 'react';
+import ColorBoxItem from './components/ColorBox';
 import { ColorProvider } from './contexts/color';
 import SelectColorsss from './components/SelectColors';
 
@@ -7,8 +7,8 @@ const App = () => {
   return (
     <ColorProvider>
       <div>
-        <SelectColorsss />
-        <ColorBox />
+        <SelectColors />
+        <ColorBoxItem />
       </div>
     </ColorProvider>
   )
