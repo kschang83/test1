@@ -7,7 +7,7 @@ const App = () => {
   return (
     <ColorProvider>
       <div>
-        <SelectColors />
+        <SelectColorsss />
         <ColorBoxItem />
       </div>
     </ColorProvider>
