@@ -10,7 +10,7 @@ const ColorContext = createContext({
 
 const ColorProvider = ({ children }) => {
     const [color, setColor] = useState('ffff3');
-    const [subcolor, setSubcolor] = useState('4ggg');
+    const [subcolor, setSubcolor] = useState('4');
 
     const value = {
         state: { color, subcolor },
