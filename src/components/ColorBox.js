@@ -3,6 +3,7 @@ import ColorContext from '../contexts/color';
 
 const ColorBox = () => {
     const { state } = useContext(ColorContext);
+    console.log(state);
 
     return (
         <div>
