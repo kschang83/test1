@@ -6,16 +6,16 @@ const SaveImg = () => {
     const handleClick = (e) => {
         html2canvas(document.querySelector("#canvas_div2")).then(function (canvas) {
             document.body.appendChild(canvas);
-            let ggg = canvas.toDataURL();
-            console.log(ggg)
-        });
-    }
+            let a = canvas.toDataURL();
+            console.log(a;)
+    });
+}
 
-    return (
-        <div>
-            <button onClick={handleClick}>이미지 캡쳐</button>
-        </div>
-    )
+return (
+    <div>
+        <button onClick={handleClick}>이미지 캡쳐</button>
+    </div>
+)
 }
 
 export default SaveImg;
