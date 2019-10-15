@@ -5,13 +5,14 @@ const ColorBox = () => {
     const { state } = useContext(ColorContext);
 
     return (
-        <>
+        <div>
             <div
                 style={{
                     width: '64px',
                     height: '64px',
                     background: state.color
                 }}
+                id='canvas_div2'
             />
 
             <div
@@ -20,8 +21,9 @@ const ColorBox = () => {
                     height: '32px',
                     background: state.subcolor
                 }}
+                id='canvas_div3'
             />
-        </>
+        </div>
     )
 }
 
