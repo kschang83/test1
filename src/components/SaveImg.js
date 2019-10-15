@@ -4,10 +4,10 @@ import html2canvas from 'html2canvas';
 const SaveImg = () => {
 
     const handleClick = (e) => {
-        html2canvas(document.querySelector("#canvas_div1")).then(function (canvas) {
+        html2canvas(document.querySelector("#canvas_div2")).then(function (canvas) {
             document.body.appendChild(canvas);
-            let myImage = canvas.toDataURL();
-            console.log(myImage);
+            let myImages = canvas.toDataURL();
+            console.log(myImages);
         });
     }
 
