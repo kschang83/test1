@@ -7,15 +7,15 @@ const SaveImg = () => {
         html2canvas(document.querySelector("#canvas_div2")).then(function (canvas) {
             document.body.appendChild(canvas);
             let a = canvas.toDataURL();
-            console.log(a;)
-    });
-}
+            console.log(a);
+        });
+    }
 
-return (
-    <div>
-        <button onClick={handleClick}>이미지 캡쳐</button>
-    </div>
-)
+    return (
+        <div>
+            <button onClick={handleClick}>이미지 캡쳐</button>
+        </div>
+    )
 }
 
 export default SaveImg;
