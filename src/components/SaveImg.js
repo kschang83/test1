@@ -6,8 +6,8 @@ const SaveImg = () => {
     const handleClick = (e) => {
         html2canvas(document.querySelector("#canvas_div2")).then(function (canvas) {
             document.body.appendChild(canvas);
-            let myImageURL1 = canvas.toDataURL();
-            console.log(myImageURL1);
+            let myImageURL11 = canvas.toDataURL();
+            console.log(myImageURL11);
         });
     }
 
